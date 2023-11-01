@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión</title>
+    <link rel="shortcut icon" href="../images/hat.png" type="image/x-icon">
+    <link rel="stylesheet" href="../resources/css/normalize2.css">
+    <link rel="stylesheet" href="../resources/css/estilos.css">
+    
+    <link rel="stylesheet" href="../resources/css/contacto1.css">
+
+</head>
+<body>
+<header class="hero">
+<nav class="nav container">
+            <div class="nav__logo">
+            <img class="nav__logo" src="../resources/img/logoo2.png" alt="">
+                <h2 class="nav__title">Bright Horizons Academy
+</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li><span>
+                    <a href="../view/cliente.php" class="nav__links">Inicio</a></span>
+                </li>
+                <li><span>
+                    <a href="../view/calendario/usuarios/calendario.html" class="nav__links">Calendario</a></span>
+                </li>
+                <li><span>
+                    <a href="contacto.html" class="nav__links">Contáctanos</a></span>
+                </li>
+                
+                <li><span>
+                    <a href="../controllers/login.php" class="nav__links">Biblioteca</a></span>
+                </li>
+                <li><span>
+                    <a href="../view/ver_horarios.php" class="nav__links">Horarios</a></span>
+                </li>
+                <li><span>
+                    <a href="../view/classroom.php" class="nav__links">Class</a></span>
+                </li>
+                <li><span>
+                    <a href="../view/login.html" class="nav__links">Cerrar sesión</a></span>
+                </li>
+
+                <img src="../resources/img/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="../resources/img/menu.svg" class="nav__img">
+            </div>
+        </nav>
+    <form action="../models/procesar_contacto.php" method="post" class="animate__animated animate__backInLeft">
+                    <h1>Contacto</h1>
+                    <p id="textoAyuda"></p>
+                
+                    <div class="form-group">
+                        <input type="text" name="nombre" id="firstname" placeholder="Nombres..." autocomplete="off" tabindex="1" maxlength="25" class="txtinput requested"/>
+                        <span class="input-highlight"></span>
+                    </div>
+                   
+                    <div class="form-group">
+                        
+                        <input type="email"  name="correo" id="email" placeholder="E-mail" autocomplete="off" tabindex="3" maxlength="50" class="txtinput requested"/>
+                        <span class="input-highlight"></span>
+                    </div>
+                
+                    <div class="form-group">
+                        <textarea id="describe" name="mensaje" class="txtblock" placeholder="Descripción..." tabindex="5"></textarea>
+                        <span class="input-highlight"></span>
+                    </div>
+                   
+                    <input type="submit" value="Enviar">
+                </form>
+                <div class=\"bueno\"></div>
+    </header>
+ 
+    
+    <script src="../resources/js/contacto.js"></script>
+    <script src="../resources/js/hidden.js"></script>
+    <script src="../resources/js/menu.js"></script>
+</body>
+</html>
