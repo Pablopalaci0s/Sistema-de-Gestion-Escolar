@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Cuerpo */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para el calendario */
+#calendar {
+    max-width: 75%;
+    max-height: 70%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#calendar h2 {
+    text-transform: capitalize;
+}
+
+#calendar th{
+    background-color: #dcdcdc;
+}
+
+/* botones */
+#calendar button{
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario */
+#formulario {
+    display: none;
+}
+
+#eventoFormulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+
+}
+
+#eventoFormulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#eventoFormulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#eventoFormulario input[type="text"],
+#eventoFormulario input[type="date"],
+#eventoFormulario input[type="submit"],
+#eventoFormulario button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#eventoFormulario input[type="submit"],
+#eventoFormulario button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#eventoFormulario input[type="submit"]:hover,
+#eventoFormulario button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilo para los botones */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el listado de eventos */
+#eventoListado {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#eventoListado h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#eventoListado ul {
+    list-style: none;
+    padding: 0;
+}
+
+#eventoListado li {
+    margin-bottom: 10px;
+}
+
+#eventoListado button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#eventoListado button:hover {
+    background-color: #c82333;
+}
+
+/* Eventos eliminar */
+#paginacion_contenedor {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#eventos-lista {
+    list-style: none;
+    padding: 0;
+}
+
+#eventos_listar h1 {
+    width: 50%;
+}
+
+/* Botones de paginacion */
+#pagination-buttons {
+    display: flex;
+}
+
+#pagination-buttons button {
+    height: 30%;
+    padding: 2%;
+    margin: 1%;
+    cursor: pointer;
+}
+
+/* Estilos para los botones principales */
+#botones_principales {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#botones_principales button {
+    margin: 1%;
+    cursor: pointer;
+}

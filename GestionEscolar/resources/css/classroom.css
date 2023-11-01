@@ -1,0 +1,459 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    z-index: 1000;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.logo i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #66ccff;
+}
+
+.user {
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #66ccff;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.user:hover {
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #66ccff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #007BFF;
+}
+
+/* Clases disponibles */
+.clases-container {
+    margin-top: 20px;
+}
+
+/* Clases disponibles */
+/* Clases disponibles */
+.clases-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas iguales */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.clase-tarjeta {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.clase-tarjeta:hover {
+    transform: scale(1.02);
+}
+
+.clase-tarjeta h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.clase-tarjeta a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.clase-tarjeta a:hover {
+    background-color: #0056b3;
+}
+
+
+/* Botones */
+.botones .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #66ccff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.botones .boton:hover {
+    background-color: #007BFF;
+}
+
+/* Ventana emergente para buscar clases */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Formulario de búsqueda */
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal form {
+    margin-top: 10px;
+}
+
+.modal label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    padding: 0 20px;
+    color: #222222;
+    background: #ffffff;
+    border-bottom: 1px solid #f2f2f2;
+    font-family: "Euclid Circular A", "Poppins";
+  }
+  
+  .logo,
+  .links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    gap: 12px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  
+  .logo h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .navbar a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  
+  a.join-link {
+    display: grid;
+    place-items: center;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 6px;
+    color: #f9f9f9;
+    background: #9b0303;
+    
+  }
+  
+  .search {
+    flex: 1 1 auto;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .search input {
+    background: #f2f2f2;
+    border-radius: 6px;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    padding-left: 34px;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  .search input::placeholder {
+    color: #9d9d9d;
+  }
+  
+  .search img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    translate: 0 -50%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .burger {
+    display: grid;
+    place-items: center;
+    background: transparent;
+    border: 0;
+  }
+  
+  @media (width >= 320px) {
+    .burger {
+      display: none;
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown > a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 72px;
+  }
+  .dropdown > a > img {
+    width: 20px;
+  }
+  
+  .dropdown:hover .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: -20px;
+    display: grid;
+    width: 180px;
+    padding: 8px 0;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 40px 40px rgb(0 0 0 / 6%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+  }
+  
+  .menu::before {
+    content: "";
+    background: inherit;
+    border-top: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    position: absolute;
+    top: -7px;
+    right: 22px;
+    width: 12px;
+    height: 12px;
+    rotate: -45deg;
+  }
+  
+h2{
+    color: black;
+}
+
+  .menu.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu > a {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  
+  .menu > a:hover {
+    background: #f5f5f5;
+  }
+  
+
+    /* Estilos para los campos de entrada en blanco y negro */
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #000; /* Borde en negro */
+        border-radius: 4px;
+        box-sizing: border-box;
+        background: #fff; /* Fondo blanco */
+        color: #000; /* Texto en negro */
+    }
+
+    input[type="submit"] {
+        background-color: #000; /* Fondo negro */
+        color: #fff; /* Texto en blanco */
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* Estilos para el formulario */
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Estilos para los campos de entrada en blanco y negro */
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #000; /* Borde en negro */
+        border-radius: 4px;
+        box-sizing: border-box;
+        background: #fff; /* Fondo blanco */
+        color: #000; /* Texto en negro */
+    }
+
+    input[type="submit"] {
+        background-color: #000; /* Fondo negro */
+        color: #fff; /* Texto en blanco */
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* Estilos para los labels en blanco y negro */
+    label {
+        color: #000; /* Texto de etiqueta en negro */
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Estilos para el formulario */
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+

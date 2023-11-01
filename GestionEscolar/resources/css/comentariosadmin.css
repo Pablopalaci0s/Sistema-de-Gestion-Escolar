@@ -1,0 +1,30 @@
+
+.tabla-contacto {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-contacto th, .tabla-contacto td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.tabla-contacto th {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabla-contacto tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Aplicar ajuste automático y ajuste de palabras a la casilla de mensaje */
+.tabla-contacto .mensaje {
+    max-height: 100px; /* Establecer una altura máxima deseada */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si es necesario */
+    word-wrap: break-word; /* Ajustar las palabras en lugar de romper líneas */
+}

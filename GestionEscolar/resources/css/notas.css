@@ -1,0 +1,342 @@
+/* Estilos para los campos del formulario */
+.form-group {
+    margin: 15px 0;
+}
+
+form label {
+    font-weight: bold;
+    color: #001A49;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.containerr {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 3%;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+    width: 15%;
+    padding: 1%;
+    margin-bottom: 1%;
+    border: 1px solid #001A49;
+    border-radius: 3px;
+    color: #001A49;
+    background-color: #f9f9f9;
+}
+
+form input[type="submit"] {
+    background-color: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 15%;
+    display: flexbox;
+}
+
+form input[type="submit"]:hover {
+    font-weight: 800;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #1a2530;
+}
+
+/* busqueda */
+#busqueda_contenedor button {
+    background-color: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#busqueda_contenedor label {
+    font-size: 20px;
+}
+
+#busqueda_contenedor button:hover {
+    font-weight: 800;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #1a2530;
+}
+
+#busqueda_contenedor {
+    margin: 1%;
+
+
+}
+
+#generarBtn {
+    background-color: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#generarBtn button:hover {
+    font-weight: 800;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #1a2530;
+}
+
+#busqueda_contenedor {
+    margin: 1%;
+}
+
+
+.opciones-generar {
+    display: none;
+}
+
+/* Estilos para el contenedor centrado del formulario */
+#centrado {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* boton mostrar notas */
+/* Estilos para el botón "Mostrar notas" */
+#Mostrar_notas {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+#Mostrar_notas:hover {
+    background-color: #1a2530;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Estilos para el botón "Ir a la página de mostrar notas" */
+#Ir_Mostrar {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+}
+
+#Ir_Mostrar:hover {
+    background-color: #1a2530;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#TablaTexto {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Estilos para las tablas */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    /* Centrar la tabla y agregar espacio debajo */
+    border: 1px solid #ddd;
+}
+
+table th,
+table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table tr:hover {
+    background-color: #ad96eeaf;
+}
+
+/* Estilo responsive para tablas */
+@media screen and (max-width: 600px) {
+    table {
+        border: none;
+    }
+
+    table th,
+    table td {
+        padding: 5px;
+        display: block;
+        text-align: left;
+        border: none;
+    }
+
+    table th {
+        background-color: transparent;
+        color: #333;
+        font-weight: bold;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* Animación de desvanecimiento para el mensaje de éxito */
+#mensaje.fade {
+    animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Estilos para mensajes de error */
+.error {
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+/* Estilos para mensajes de éxito */
+.exito {
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+/* Estilos del menú desplegable */
+.menu {
+    text-align: center;
+    padding-bottom: 150px;
+    border-radius: 20px;
+
+}
+
+.menu div {
+    border: 30px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.dropbtn:hover {
+    background-color: #1a2530;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1a2530;
+}
+
+.menu-option {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.menu-option:hover {
+    background-color: #1a2530;
+}
+
+.bloquePromedio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    height: 100vh;
+    /* Esto es opcional para hacer que el contenedor ocupe toda la altura de la ventana. Ajusta según tus necesidades. */
+}
+
+#gradoForm {
+    text-align: center;
+    /* Alinea el contenido del formulario al centro */
+}
+
+#chart-container {
+    width: auto;
+    max-height: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
