@@ -1,0 +1,16 @@
+Se ha adaptado toda lo que involucra agragar estudaintes, buscar, mostrar, adestudienate para la nueva base
+ademas se han quitado partes de codigo innecesarias como las constates conexiones innecesarios por solo la llamada a db
+
+pasar lo de estudiantes, busqueda.css
+
+por error se eliminaron varios archivos que pertenecian a estudiantes, debido a que tenian el mismo nombre
+para posteriores revisar lo que se elimina 
+
+agregar ajax a la tabla de estudiantes para que se actualice cada que se agrege un estudiante
+
+
+LOS LINKS ESTAN MAL, USAR LOS QUE PASO PABLO 
+
+CALENDARIO FALLA, 
+
+links corregir
